@@ -1,0 +1,119 @@
+:root {
+  --black(#272727);
+}
+
+html {
+  box-sizing: border-box;
+  font-weight: 900;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  margin: 5vh auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  align-items: center;
+  margin: 0;
+  padding: 0.8rem;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  background-color: steelblue;
+}
+.fa-plus {
+  float: right;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+}
+input {
+  height: 3rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  color: #666;
+  background-color: #f2f2f2;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+.visuallyhidden {
+  visibility: hidden;
+  opacity: 0;
+  /* width: 0px; */
+  height: 0px;
+  transition: 0.2s linear;
+}
+.hidden {
+  display: none;
+}
+input[type="submit"]{
+  display: none;
+}
+input:focus {
+  background-color: white;
+  border: 3px solid steelblue;
+  outline: none;
+  color: #2980b9;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+span {
+  cursor: pointer;
+  background-color: #e74c3c;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+li {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  color: #666;
+  background-color: #f2f2f2;
+}
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+li:nth-child(odd) {
+  background-color: white;
+}
+li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.complete {
+  color: #666;
+  text-decoration: line-through;
+}
+.deleted {
+  visibility: hidden;
+  opacity: 0;
+  /* width: 0px; */
+  height: 0px;
+  transition: 0.2s linear;
+}
